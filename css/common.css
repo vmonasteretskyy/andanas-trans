@@ -1,0 +1,949 @@
+/* GENRAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+ul.no-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+h3.black {
+    color: #4F5A61;
+}
+
+main {
+    margin-top: 64px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+}
+
+
+/* -----------------------------------HEADER------------------------------------ */
+header.header {
+    height: 64px;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+    z-index: 200;
+}
+
+
+.header__logo {
+    width: 225px;
+    padding-left: 105px;
+}
+
+.header__logo a img {
+    max-width: 118px;
+}
+
+.header__menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 64px;
+    margin-right: 50px;
+}
+
+.header__menu ul li:last-child {
+    margin-right: 0;
+}
+
+.header__menu ul li a {
+    text-decoration: none;
+    font-family: 'Istok Web',
+        sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F5A61;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header__menu ul li a:after {
+    height: 4px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5981A6;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    content: "";
+    display: block;
+    margin: 0 auto;
+}
+
+.header__menu ul li.active a:after {
+    width: 100%;
+}
+
+.header__menu ul li a:hover:after {
+    width: 100%;
+}
+
+.header__rightbox {
+    width: 225px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__language {
+    position: relative;
+    display: inline-flex;
+    position: relative;
+    width: 86px;
+    height: 64px;
+    background-color: #5981A6;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__language .header__choosenlang {
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    font-family: 'Istok Web',
+        sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    padding-right: 18px;
+}
+
+.header__language .header__choosenlang:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url(../image/icons/white-arrow-down.svg);
+    background-position: center center;
+    background-size: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.header__language ul {
+    position: absolute;
+    position: absolute;
+    width: 86px;
+    background-color: #fff;
+    top: 64px;
+    display: none;
+}
+
+.header__language ul li {
+    display: block;
+    text-align: center;
+}
+
+.header__language ul li a {
+    text-decoration: none;
+    font-family: 'Istok Web', sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    display: block;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    padding: 2px 0;
+}
+
+.header__language ul li a:hover {
+    color: #fff;
+    background-color: #5981A6;
+}
+
+.header__login a {
+    text-decoration: none;
+}
+
+.header__login a span {
+    font-size: 16px;
+    line-height: 23px;
+    color: #5981A6;
+    font-family: 'Istok Web',
+        sans-serif;
+    padding-left: 30px;
+    background-image: url(../image/icons/login-icon.svg);
+    background-position: left top 1px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.header__login {
+    width: calc(100% - 86px);
+    display: flex;
+    align-items: center;
+}
+
+/* -----------------------------------HEADER END------------------------------------ */
+/* -----------------------------------Choose a Route------------------------------------ */
+.choose-route {
+    min-height: 432px;
+    background: url(../image/road-pic.png) no-repeat center center;
+    padding: 95px 0 140px 0;
+    background-size: cover;
+}
+
+.choose-route h3 {
+    margin: 0 0 8px 0;
+}
+
+.choose-route .subtitle {
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Istok Web',
+        sans-serif;
+    margin: 0 0 56px 0;
+}
+
+.route__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.route__from,
+.route__to,
+.route__departure,
+.route__btn {
+    position: relative;
+    width: 100%;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.route__departure {
+    -ms-flex: 0 0 17.4%;
+    flex: 0 0 17.4%;
+    max-width: 17.4%;
+}
+
+.route__from {
+    -ms-flex: 0 0 21.7%;
+    flex: 0 0 21.7%;
+    max-width: 21.7%;
+}
+
+.route__to {
+    -ms-flex: 0 0 21.7%;
+    flex: 0 0 21.7%;
+    max-width: 21.7%;
+}
+
+.route__fromcont,
+.route__tocont,
+.route__departurecont {
+    background-color: #fff;
+    border-radius: 4px;
+    height: 64px;
+    padding: 10px 0 0 0;
+}
+
+.route__departurecont {
+    padding: 0;
+}
+
+.route__title {
+    color: #9AA4B0;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    font-family: 'Istok Web',
+        sans-serif;
+    margin: 0;
+    padding-left: 24px;
+}
+
+.transparentselect {
+    width: 100%;
+}
+
+.transparentselect .jq-selectbox__select {
+    padding: 0;
+    width: 100%;
+    height: 32px;
+    border: none;
+    background: #fff;
+    box-shadow: none;
+    font: 18px/26px 'Istok Web',
+        sans-serif;
+    color: #4F5A61;
+    text-shadow: none;
+    padding: 0 24px;
+}
+
+.transparentselect .jq-selectbox__trigger {
+    display: none;
+}
+
+.transparentselect.jq-selectbox.focused .jq-selectbox__select {
+    border: none;
+}
+
+.transparentselect .jq-selectbox__dropdown {
+    margin-top: 6px;
+}
+
+.route__calicblock {
+    display: inline-block;
+    width: 48px;
+    height: 100%;
+    background: url(../image/icons/calendar.svg) no-repeat center center;
+    border-right: 1px solid #9AA4B0;
+    vertical-align: top;
+}
+
+.route__calblock {
+    padding-top: 10px;
+}
+
+.route__calblock {
+    display: inline-block;
+    width: calc(100% - 52px);
+    height: 100%;
+    vertical-align: top;
+}
+
+.route__calblock .route__title {
+    padding-left: 10px;
+}
+
+.route__btn {
+    -ms-flex: 0 0 21.8%;
+    flex: 0 0 21.8%;
+    max-width: 21.8%;
+}
+
+.route__btn input {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #5981A6;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 64px;
+}
+
+.datepicker-here {
+    outline: none;
+    max-width: 100%;
+    border: none;
+    padding-left: 10px;
+}
+
+.datepicker-here {
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F5A61;
+    font-family: 'Istok Web',
+        sans-serif;
+}
+
+/* -----------------------------------Choose a Route- END----------------------------------- */
+
+/* Популярные направления */
+.poproutes {
+    padding: 48px 0;
+}
+
+.poproutes h3 {
+    margin-bottom: 48px;
+}
+
+.poproute {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+    height: 90px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.poproute:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    right: 60px;
+    bottom: -8px;
+    box-shadow: inset 0 10px 10px #f7f7f7;
+}
+
+.poproute::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    right: 60px;
+    top: -8px;
+    box-shadow: inset 0 -10px 10px #f7f7f7;
+}
+
+.poproute__leftroute {
+    width: calc(100% - 73px);
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    padding: 24px;
+}
+
+.poproute__rightprice {
+    width: 68.5px;
+    height: 100%;
+    vertical-align: top;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px dashed #DBE3ED;
+}
+
+.poproute__rightprice p {
+    margin: 0;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #5981A6;
+    font-family: 'Istok Web',
+        sans-serif;
+}
+
+.poproute__rightprice p span {
+    display: block;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.poproute__from,
+.poproute__to,
+.poproute__image {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.poproute__image {
+    margin: 0 6px;
+}
+
+.poproute__city {
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F5A61;
+    font-family: 'Istok Web',
+        sans-serif;
+    display: block;
+}
+
+.poproute__subtitle {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #9AA4B0;
+    font-family: 'Istok Web',
+        sans-serif;
+    display: block;
+}
+
+.allroutes-link {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.allroutes-link a {
+    font-size: 18px;
+    line-height: 26px;
+    color: #5981A6;
+    font-family: 'Istok Web',
+        sans-serif;
+    position: relative;
+    padding-right: 4px;
+}
+
+.allroutes-link a:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    height: 1px;
+    width: 24px;
+    background-color: #5981A6;
+}
+
+/* Популярные направления end */
+/* Что говорят наши клиенты */
+.reviews {
+    padding: 48px 0 48px 0;
+}
+
+.reviews h3 {
+    margin-bottom: 48px;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.reviews__slide>img {
+    display: block;
+    margin: 0 auto 38px;
+    max-width: 44px;
+}
+
+.reviews__slide .review__descr {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    font-family: 'Istok Web',
+        sans-serif;
+    color: #6F7B82;
+    max-width: 330px;
+    margin: 0 auto 24px;
+}
+
+.review__rating {
+    display: flex;
+    max-width: 133px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 4px;
+}
+
+.review__name {
+    margin: 0 0 4px 0;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #6F7B82;
+    font-family: 'Istok Web',
+        sans-serif;
+}
+
+.review__date {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #6F7B82;
+    font-family: 'Istok Web',
+        sans-serif;
+    margin: 0;
+}
+
+.reviews-slider .slick-dots {
+    list-style-type: none;
+    padding: 0;
+    margin: 70px 0 0 0;
+    display: block;
+    text-align: center;
+    height: 8px;
+}
+
+.reviews-slider .slick-dots li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.reviews-slider .slick-dots li button {
+    padding: 0;
+    outline: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    color: transparent;
+    border: none;
+    width: 8px;
+    height: 8px;
+    background: #5981A6;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.reviews-slider .slick-dots li.slick-active button {
+    width: 24px;
+}
+
+/* Что говорят наши клиенты END */
+
+/* На автобусе по Украине и Европе */
+
+.subscribe {
+    padding: 48px 0 88px 0;
+    background: #FDFDFE;
+}
+
+.subscribe h3 {
+    margin-bottom: 48px;
+}
+
+.subscribe__textblock {
+    margin-bottom: 88px;
+}
+
+.subscribe__textblock p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #6F7B82;
+    margin: 0 0 16px 0;
+    font-family: 'Istok Web',
+        sans-serif;
+}
+
+.subscribe__textblock p:last-child {
+    margin-bottom: 0;
+}
+
+.subscribebox {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.subscribebox__leftblock {
+    background-color: #fff;
+    padding: 56px 88px 64px 106px;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
+
+.subscribebox__leftblock .title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #4F5A61;
+    margin: 0 0 8px 0;
+}
+
+.subscribebox__leftblock .descr {
+    margin: 0 0 32px 0;
+    font-size: 18px;
+    line-height: 26px;
+    color: #6F7B82;
+    font-family: 'Istok Web',
+        sans-serif;
+}
+
+.subscribebox__leftblock form {
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.subscribebox__leftblock form input[type="email"] {
+    height: 56px;
+    border: 1px solid #9AA4B0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    padding-left: 24px;
+    padding-right: 185px;
+}
+
+.subscribebox__leftblock form input[type="submit"] {
+    height: 56px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 182px;
+    border: none;
+    outline: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    background: #5981A6;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.subscribebox__rightblock {
+    height: 100%;
+    background-color: #5981A6;
+    background-image: url(../image/icons/mail.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+}
+
+.subscribebox__rightblock:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 24px solid #5981A6;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    left: -23px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* На автобусе по Украине и Европе END */
+
+/* FOOTER */
+footer.footer {
+    background-color: #242C30;
+    padding: 48px 0 32px 0;
+}
+
+.footer__leftbox .logo-footer img {
+    max-width: 147px;
+}
+
+.footer__leftbox .logo-footer {
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.footer__leftbox ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.footer__leftbox ul li:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.footer__leftbox ul li:last-child {
+    margin-top: 24px;
+}
+
+.footer__leftbox ul li:last-child a:nth-child(1) {
+    margin-right: 24px;
+}
+
+.footer__leftbox ul li a {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Istok Web', sans-serif;
+    color: #9AA4B0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.footer__leftbox ul li a:hover {
+    color: #fff;
+}
+
+.footer__list {
+    font-family: 'Istok Web',
+        sans-serif;
+    padding-top: 16px;
+}
+
+.footer__list .title {
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.footer__list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__list ul li {
+    margin-bottom: 8px;
+}
+
+.footer__list ul li a {
+    font-size: 18px;
+    line-height: 26px;
+    color: #9AA4B0;
+}
+
+.footer__card {
+    margin-top: 30px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-resived {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #9AA4B0;
+    margin: 0;
+}
+
+.footer__card img {
+    max-width: 40px;
+}
+
+/* FOOTER END  */
+
+.readall,
+.header__rightbox.showphone {
+    display: none;
+}
+
+.poproute__from,
+.poproute__to {
+    max-width: 100px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* font-family: 'Istok Web',
+sans-serif;
+font-family: 'Roboto',
+sans-serif; */
+
+/* hovers */
+.header__language,
+.route__btn input,
+.allroutes-link a:before,
+.allroutes-link a,
+.poproute__rightprice p,
+.poproute__subtitle,
+.subscribebox__leftblock form input[type="submit"],
+.footer__list ul li a {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.header__language:hover,
+.route__btn input:hover,
+.subscribebox__leftblock form input[type="submit"]:hover {
+    background-color: #73a3cf;
+}
+
+.allroutes-link a:hover,
+.poproute:hover .poproute__rightprice p {
+    color: #73a3cf;
+}
+
+.poproute:hover .poproute__subtitle {
+    color: #000;
+}
+
+.footer__list ul li a:hover {
+    color: #fff;
+}
+
+.allroutes-link a:hover:before {
+    width: 100%;
+    background-color: #73a3cf;
+}

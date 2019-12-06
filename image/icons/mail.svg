@@ -1,0 +1,27 @@
+<svg width="172" height="168" viewBox="0 0 172 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)" filter="url(#filter0_d)">
+<path d="M20 54.3512V123.651C20 128.192 23.696 131.888 28.2368 131.888H143.763C148.304 131.888 152 128.192 152 123.651V54.3512H20Z" fill="#9AA4B0"/>
+<path d="M149.043 48.4904L90.2504 5.51124C87.716 3.66324 84.2576 3.66324 81.7232 5.51124L22.9568 48.4904C21.1088 49.8368 20 52.0017 20 54.2985V54.3512H152V54.2985C152 52.0017 150.891 49.8368 149.043 48.4904Z" fill="#DBE3ED"/>
+<path d="M132.306 14.4081H39.3776C37.952 14.4081 36.7904 15.5697 36.7904 16.9953V95.8521C36.7904 97.2777 37.952 98.4393 39.3776 98.4393H132.306C133.731 98.4393 134.893 97.2777 134.893 95.8521V16.9953C134.893 15.5697 133.731 14.4081 132.306 14.4081Z" fill="#79A0C4"/>
+<path d="M120.109 29.6672H51.548V33.5744H120.109V29.6672Z" fill="#5981A6"/>
+<path d="M120.109 53.4272H51.548V57.3344H120.109V53.4272Z" fill="#5981A6"/>
+<path d="M120.109 65.3073H51.548V69.2145H120.109V65.3073Z" fill="#5981A6"/>
+<path d="M120.109 41.5471H51.548V45.4543H120.109V41.5471Z" fill="#5981A6"/>
+<path d="M28.2368 131.888H143.922C148.383 131.888 152.026 128.271 152.026 123.783V54.3512L28.2368 131.888Z" fill="#FEFFFF"/>
+<path d="M20 54.3512V123.81C20 128.271 23.6168 131.888 28.1048 131.888H143.79L20 54.3512Z" fill="#DBE3ED"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="-2" width="172" height="172" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="16"/>
+<feGaussianBlur stdDeviation="10"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<clipPath id="clip0">
+<rect width="132" height="132" fill="white" transform="translate(20 2)"/>
+</clipPath>
+</defs>
+</svg>

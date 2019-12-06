@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Istok+Web:400,700|Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="#"><img src="image/logo.svg" alt=""></a>
+        </div>
+        <div class="header__menu">
+            <nav>
+                <ul class="no-style">
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Пассажирам</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__rightbox showphone">
+                <div class="header__login">
+                    <a href="#"><span>Вход</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="burger burger1"><span></span></div>
+        <div class="header__rightbox">
+            <div class="header__login">
+                <a href="#"><span>Вход</span></a>
+            </div>
+            <div class="header__language">
+                <span class="header__choosenlang">ru</span>
+                <ul class="no-style">
+                    <li><a href="#">ua</a></li>
+                    <li><a href="#">en</a></li>
+                    <li><a href="#">ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="choose-route">
+            <div class="container">
+                <h3>Планируете поездку</h3>
+                <p class="subtitle">покупайте билеты онлайн с комфортом</p>
+                <form action="">
+                    <div class="route__row">
+                        <div class="route__from">
+                            <div class="route__fromcont">
+                                <p class="route__title">Откуда</p>
+                                <select name="" id="" class="transparentselect">
+                                    <option value="0">Киев</option>
+                                    <option value="1">Львов</option>
+                                    <option value="2">Ивано-Франковск</option>
+                                    <option value="3">Харьков</option>
+                                    <option value="4">Херсон</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="route__to">
+                            <div class="route__tocont">
+                                <p class="route__title">Куда</p>
+                                <select name="" id="" class="transparentselect">
+                                    <option value="0">Львов</option>
+                                    <option value="1">Киев</option>
+                                    <option value="2">Ивано-Франковск</option>
+                                    <option value="3">Харьков</option>
+                                    <option value="4">Херсон</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="route__departure">
+                            <div class="route__departurecont">
+                                <div class="route__calicblock"></div>
+                                <div class="route__calblock">
+                                    <p class="route__title">Отправление</p>
+                                    <input type='text' class="datepicker-here from-date" id=""
+                                        placeholder="02.12.2019" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="route__departure">
+                            <div class="route__departurecont">
+                                <div class="route__calicblock"></div>
+                                <div class="route__calblock">
+                                    <p class="route__title">Возвращение</p>
+                                    <input type='text' class="datepicker-here to-date" id="" placeholder="02.12.2019" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="route__btn">
+                            <input type="submit" value="Найти билет">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="poproutes">
+            <div class="container">
+                <h3 class="black">Популярные направления</h3>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="poproute">
+                            <a href="#">
+                                <div class="poproute__leftroute">
+                                    <div class="poproute__from">
+                                        <span class="poproute__city">Киев</span>
+                                        <span class="poproute__subtitle">Откуда</span>
+                                    </div>
+                                    <div class="poproute__image"><img src="image/icons/route.svg" alt="image"></div>
+                                    <div class="poproute__to">
+                                        <span class="poproute__city">Львов</span>
+                                        <span class="poproute__subtitle">Куда</span>
+                                    </div>
+                                </div>
+                                <div class="poproute__rightprice">
+                                    <p>300<span>uah</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="poproute">
+                            <a href="#">
+                                <div class="poproute__leftroute">
+                                    <div class="poproute__from">
+                                        <span class="poproute__city">Киев</span>
+                                        <span class="poproute__subtitle">Откуда</span>
+                                    </div>
+                                    <div class="poproute__image"><img src="image/icons/route.svg" alt="image"></div>
+                                    <div class="poproute__to">
+                                        <span class="poproute__city">Прага</span>
+                                        <span class="poproute__subtitle">Куда</span>
+                                    </div>
+                                </div>
+                                <div class="poproute__rightprice">
+                                    <p>300<span>uah</span></p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="poproute">
+                            <a href="#">
+                                <div class="poproute__leftroute">
+                                    <div class="poproute__from">
+                                        <span class="poproute__city">Киев</span>
+                                        <span class="poproute__subtitle">Откуда</span>
+                                    </div>
+                                    <div class="poproute__image"><img src="image/icons/route.svg" alt="image"></div>
+                                    <div class="poproute__to">
+                                        <span class="poproute__city">Мюнхен</span>
+                                        <span class="poproute__subtitle">Куда</span>
+                                    </div>
+                                </div>
+                                <div class="poproute__rightprice">
+                                    <p>300<span>uah</span></p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="poproute">
+                            <a href="#">
+                                <div class="poproute__leftroute">
+                                    <div class="poproute__from">
+                                        <span class="poproute__city">Киев</span>
+                                        <span class="poproute__subtitle">Откуда</span>
+                                    </div>
+                                    <div class="poproute__image"><img src="image/icons/route.svg" alt="image"></div>
+                                    <div class="poproute__to">
+                                        <span class="poproute__city">Краков</span>
+                                        <span class="poproute__subtitle">Куда</span>
+                                    </div>
+                                </div>
+                                <div class="poproute__rightprice">
+                                    <p>300<span>uah</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="poproute">
+                            <a href="#">
+                                <div class="poproute__leftroute">
+                                    <div class="poproute__from">
+                                        <span class="poproute__city">Киев</span>
+                                        <span class="poproute__subtitle">Откуда</span>
+                                    </div>
+                                    <div class="poproute__image"><img src="image/icons/route.svg" alt="image"></div>
+                                    <div class="poproute__to">
+                                        <span class="poproute__city">Краков</span>
+                                        <span class="poproute__subtitle">Куда</span>
+                                    </div>
+                                </div>
+                                <div class="poproute__rightprice">
+                                    <p>300<span>uah</span></p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="poproute">
+                            <a href="#">
+                                <div class="poproute__leftroute">
+                                    <div class="poproute__from">
+                                        <span class="poproute__city">Киев</span>
+                                        <span class="poproute__subtitle">Откуда</span>
+                                    </div>
+                                    <div class="poproute__image"><img src="image/icons/route.svg" alt="image"></div>
+                                    <div class="poproute__to">
+                                        <span class="poproute__city">Варшава</span>
+                                        <span class="poproute__subtitle">Куда</span>
+                                    </div>
+                                </div>
+                                <div class="poproute__rightprice">
+                                    <p>300<span>uah</span></p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="allroutes-link">
+                    <a href="#">все направления</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h3 class="black">Что говорят наши клиенты</h3>
+                <div class="reviews-slidersect">
+                    <div class="reviews-slider">
+                        <div>
+                            <div class="reviews__slide">
+                                <img src="image/icons/right-quote.svg" alt="image">
+                                <p class="review__descr">
+                                    Наконец попался хоть и не самый современный, но достаточно комфортабельный автобус
+                                </p>
+                                <div class="review__rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/grey-star.svg" alt="rating">
+                                </div>
+                                <p class="review__name">Ольга</p>
+                                <p class="review__date">10.09.19</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews__slide">
+                                <img src="image/icons/right-quote.svg" alt="image">
+                                <p class="review__descr">
+                                    Спасибо, в автобусе комфортно, оператор своевременно оповестил о времени прибытия
+                                    автобуса в Киев.
+                                </p>
+                                <div class="review__rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/grey-star.svg" alt="rating">
+                                </div>
+                                <p class="review__name">Светлана</p>
+                                <p class="review__date">03.09.19</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews__slide">
+                                <img src="image/icons/right-quote.svg" alt="image">
+                                <p class="review__descr">
+                                    Система бронирования и оповещения работает четко и слажено. Автобус классный!
+                                    Чистый!
+                                </p>
+                                <div class="review__rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/grey-star.svg" alt="rating">
+                                </div>
+                                <p class="review__name">Максим</p>
+                                <p class="review__date">28.07.19</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="reviews__slide">
+                                <img src="image/icons/right-quote.svg" alt="image">
+                                <p class="review__descr">
+                                    Спасибо, в автобусе комфортно, оператор своевременно оповестил о времени прибытия
+                                    автобуса в Киев.
+                                </p>
+                                <div class="review__rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/yellow-star.svg" alt="rating">
+                                    <img src="image/icons/grey-star.svg" alt="rating">
+                                </div>
+                                <p class="review__name">Светлана</p>
+                                <p class="review__date">03.09.19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="container">
+                <h3 class="black text-left">На автобусе по Украине и Европе</h3>
+                <div class="subscribe__textblock">
+                    <p>
+                        Билеты на автобус - это недорогой способ осуществить путешествие своей мечты. Для такого
+                        путешествия также нужны личные вещи и подходящее настроение.
+                    </p>
+                    <p>
+                        На нашем сайте размещена необходимая информация для пассажиров, начиная от расписания и вариаций
+                        рейсов, заканчивая стоимостью билетов и транспортом, который курсирует по выбранному маршруту.
+                        Простой и понятный интерфейс ресурса позволяет за 5 минут составить путь поездки, выбрать из
+                        списка лучший рейс и приобрести либо забронировать билет.
+                    </p>
+                    <p>
+                        Мы придерживаемся гибкой политики сотрудничества с клиентами и предоставляем возможность
+                        заплатить за билеты на автобус удобным способом: наличными либо провести онлайн-оплату с помощью
+                        банковской карты. Кроме того, поддержка клиентов сайта работает круглосуточно, поэтому если у
+                        вас возникает вопрос, как купить/заказать/забронировать или же вы просто хотите уточнить, какая
+                        цена билета, звоните в любое время.
+                    </p>
+
+                    <div class="readall"><span>читать все</span></div>
+                </div>
+                <div class="subscribebox">
+                    <div class="row no-gutters">
+                        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-9">
+                            <div class="subscribebox__leftblock">
+                                <p class="title">Подпишитесь на новости</p>
+                                <p class="descr">Хотите получать новости и акции первыми, подписывайтесь</p>
+                                <form action="">
+                                    <div class="subscribebox__inputfield">
+                                        <input type="email" placeholder="Email">
+                                        <input type="submit" value="Подписаться">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3">
+                            <div class="subscribebox__rightblock">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-3">
+                    <div class="footer__leftbox">
+                        <a href="#" class="logo-footer"><img src="image/icons/logo-footer.svg" alt="logo"></a>
+                        <ul>
+                            <li><a href="tel:+3809500000000">+38 095 000 000 00</a></li>
+                            <li><a href="mailto:email@gmail.com">email@gmail.com</a></li>
+                            <li>
+                                <a href="#" target="_blank"><img src="image/icons/instagram-white.svg"
+                                        alt="instagram"></a>
+                                <a href="#" target="_blank"><img src="image/icons/facebook-white.svg"
+                                        alt="facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 phone-hide">
+                    <div class="footer__list">
+                        <p class="title">Andanas trans</p>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 phone-hide">
+                    <div class="footer__list">
+                        <p class="title">Пассажирам</p>
+                        <ul>
+                            <li><a href="#">Договор оферты</a></li>
+                            <li><a href="#">Правила перевозки</a></li>
+                            <li><a href="#">Возврат билетов</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3">
+                    <div class="footer__list">
+                        <p class="title phone-hide">Информация</p>
+                        <ul class="phone-hide">
+                            <li><a href="#">Часты вопросы</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                        <div class="footer__card">
+                            <a href="#"><img src="image/icons/mastercard.svg" alt="mastercard"></a>
+                            <a href="#"><img src="image/icons/visa.svg" alt="visa"></a>
+                            <a href="#"><img src="image/icons/paypal.svg" alt="paypal"></a>
+                        </div>
+                        <p class="foot-resived">© 2019 Andanas trans </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
