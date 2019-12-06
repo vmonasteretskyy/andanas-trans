@@ -36,7 +36,9 @@
         max-height: calc(100vh - 50px);
     }
 
-
+    .faqaccordeon__title p {
+        font-size: 20px;
+    }
 
 }
 
@@ -127,7 +129,9 @@
         margin: 40px 0 16px 0;
     }
 
-
+    .faqaccordeon__title p {
+        font-size: 18px;
+    }
 
 
 
@@ -141,7 +145,8 @@
     .poproute__city,
     .abus-section p:not(.title),
     .blogbox__descr .description,
-    .blogopen__textsect p:not(.blogopen__title) {
+    .blogopen__textsect p:not(.blogopen__title),
+    .faqaccordeon__boxbott p {
         font-size: 16px;
         line-height: 23px;
     }
@@ -657,6 +662,42 @@
     .blogopen__textsect {
         padding: 24px 0 44px 0;
     }
+
+    .faq h3 {
+        margin-bottom: 32px;
+    }
+
+    .faqaccordeon__btn {
+        width: 72px;
+    }
+
+    .faqaccordeon__title {
+        width: calc(100% - 72px);
+        padding: 16px 24px;
+    }
+
+    .faqaccordeon__box {
+        height: auto;
+        min-height: 107px;
+    }
+
+    .faqaccordeon__btn,
+    .faqaccordeon__title {
+        height: auto;
+    }
+
+    .faqaccordeon {
+        margin-bottom: 16px;
+    }
+
+    .general.faq {
+        padding-bottom: 48px;
+    }
+
+    .faqaccordeon__boxbott {
+        padding: 24px;
+    }
+
 
     /* - */
     .route__btn input {

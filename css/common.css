@@ -1226,6 +1226,10 @@ footer.footer {
     margin-bottom: 30px;
 }
 
+main {
+    min-height: calc(100vh - 373px);
+}
+
 /* FAQ END===================================================================== */
 
 
