@@ -126,7 +126,8 @@
     .subscribebox__leftblock .descr,
     .footer__list ul li a,
     .footer__leftbox ul li a,
-    .poproute__city {
+    .poproute__city,
+    .abus-section p:not(.title) {
         font-size: 16px;
         line-height: 22px;
     }
@@ -563,8 +564,28 @@
         line-height: 14px;
     }
 
+    .aboutus-content {
+        padding: 24px 0 0 0;
+    }
 
+    .abus-section .title {
+        text-align: center;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
 
+    .abus-section>img {
+        margin: 8px 0 32px 0;
+    }
+
+    .twopic {
+        margin-top: 32px;
+    }
+
+    .twopic .col-sm-6:not(:last-child) .twopic img {
+        margin-bottom: 16px;
+    }
 
 
     /* - */

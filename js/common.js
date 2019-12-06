@@ -4,28 +4,29 @@ $(document).ready(function () {
     });
 
     // reviews sldier
-    $('.reviews-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
-        arrows: false,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
+    if ($('*').is('.reviews-slider')) {
+        $('.reviews-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
                 }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
-
+            ]
+        });
+    }
     // Инициализация
     // Доступ к экземпляру объекта
     $('.from-date,.to-date').data('datepicker')
@@ -64,7 +65,10 @@ $(document).ready(function () {
 
 
 
-    $(function () {
-        $('.choose-route select').styler();
-    });
+    if ($('*').is('select')) {
+        $(function () {
+            $('.choose-route select').styler();
+        });
+    }
+
 });
