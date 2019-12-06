@@ -459,6 +459,7 @@ header.header {
     height: 100%;
     vertical-align: top;
     padding: 24px;
+    overflow: hidden;
 }
 
 .poproute__rightprice {
@@ -883,13 +884,18 @@ footer.footer {
 
 .poproute__from,
 .poproute__to {
-    max-width: 100px;
+    /* max-width: 100px; */
     overflow: hidden;
 }
 
+.poproute {
+    display: flex;
+    height: auto;
+}
 
-
-
+.poproute>a {
+    width: 100%;
+}
 
 
 
