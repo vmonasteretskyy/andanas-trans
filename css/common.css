@@ -1125,12 +1125,111 @@ footer.footer {
     margin: 32px 0 0 0;
 }
 
-
-
-
-
-
 /* BLOG OPEN ============================================================== */
+/* FAQ===================================================================== */
+.faq h3 {
+    margin-bottom: 48px;
+}
+
+.faqaccordeon__box {
+    background-color: #fff;
+    height: 94px;
+    /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08); */
+    border-radius: 8px;
+    display: flex;
+}
+
+.faqaccordeon__title {
+    height: 100%;
+    width: calc(100% - 94px);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+}
+
+.faqaccordeon__title p {
+    font-size: 22px;
+    line-height: 140%;
+    color: #4F5A61;
+    margin: 0;
+}
+
+.faqaccordeon__btn {
+    width: 94px;
+    border-left: 1px solid #DBE3ED;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.faqaccordeon__btn span {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../image/icons/plus.svg);
+    background-size: 100% 100%;
+}
+
+.faqaccordeon__boxbott {
+    padding: 40px 32px;
+    background: #F9F9F9;
+    border-radius: 0px 0px 8px 8px;
+    overflow: hidden;
+    display: none;
+}
+
+.faqaccordeon__boxbott p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #6F7B82;
+    margin: 0;
+}
+
+.faqaccordeon {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+}
+
+.faqaccordeon__btn:after {
+    content: "";
+    width: 32px;
+    height: 16px;
+    background-image: url(../image/trigger.png);
+    background-size: 100%;
+    position: absolute;
+    bottom: -3px;
+    display: none;
+}
+
+.faqaccordeon__btn.showaft span {
+    background-image: url(../image/icons/minus.svg);
+}
+
+.faqaccordeon__btn.showaft:after {
+    display: inline-block;
+}
+
+.faqaccordeon {
+    margin-bottom: 30px;
+}
+
+/* FAQ END===================================================================== */
+
+
+
 
 
 

@@ -38,7 +38,12 @@ $(document).ready(function () {
         $('.header__menu').toggleClass('showmenu');
     });
 
+    // accordeon FAQ page
 
+    $('.faqaccordeon__btn').click(function () {
+        $(this).toggleClass('showaft');
+        $(this).parent().next().slideToggle();
+    });
 
 
 
