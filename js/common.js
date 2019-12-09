@@ -53,11 +53,22 @@ $(document).ready(function () {
     })
 
 
+    // direction
+    let routeHeightAll = $('.direction__rows.col').height();
+    let routeHeightLast = $('.direction__rows.col .direction__row:last-child').height()
+    $('.direction__pic').css('height', (routeHeightAll - routeHeightLast) + 20);
 
+    // video
 
-
-
-
+    $('#play-video').on('click', function (ev) {
+        //start youtube video
+        $("#video")[0].src += "&autoplay=1";
+        ev.preventDefault();
+        //hide overlayed html5 video
+        $("#video_overlayed").css({ "display": "none", "opacity": "0" });
+        //hide svg play button while playing video
+        $("#play-video").css({ "display": "none", "opacity": "0" });
+    });
 
 
 
@@ -77,3 +88,5 @@ $(document).ready(function () {
     }
 
 });
+
+
